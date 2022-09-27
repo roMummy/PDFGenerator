@@ -24,8 +24,8 @@ class PDFOutputViewController: UIViewController {
     }
 
     @IBAction func render(_: UIButton) {
-        let dst = NSHomeDirectory() + "/test.pdf"
-        try! PDFGenerator.generate(self.scrollView, to: dst)
+        let dst = NSTemporaryDirectory() + "/test.pdf"
+        try? PDFGenerator.generate(self.scrollView, to: dst)
         openPDFViewer(dst)
     }
 

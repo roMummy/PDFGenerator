@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     }
 
     fileprivate func getDestinationPath(_ number: Int) -> String {
-        return NSHomeDirectory() + "/sample\(number).pdf"
+        return NSTemporaryDirectory() + "/sample\(number).pdf"
     }
 
     @IBAction fileprivate func generateSamplePDFFromViews(_ sender: AnyObject?) {

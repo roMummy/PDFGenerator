@@ -43,7 +43,7 @@ class PDFGeneratorTests: XCTestCase {
     }
 
     func PDFDirectoryPath() -> String {
-        return NSHomeDirectory() + "/test/"
+        return NSTemporaryDirectory() + "/test/"
     }
 
     func PDFfilePath(_ fileName: String) -> String {
